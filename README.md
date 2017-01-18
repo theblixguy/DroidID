@@ -1,6 +1,8 @@
 # DroidID
 DroidID - Unlock your Mac using your Android phone's fingerprint sensor!
 
+Check out the coverage on AndroidAuthority to learn more: http://www.androidauthority.com/droidid-unlock-computer-fingerprint-sensor-681835/
+
 ## Mac
 Contains the Mac client app's source code.
 
