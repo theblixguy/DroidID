@@ -3,7 +3,6 @@ DroidID - Unlock your Mac using your Android phone's fingerprint sensor!
 
 ### Coverage
 
-* LifeHacker: https://lifehacker.com/how-to-squeeze-more-battery-out-of-your-phone-with-andr-1791336715
 * AndroidAuthority: http://www.androidauthority.com/droidid-unlock-computer-fingerprint-sensor-681835/
 
 ## Mac
