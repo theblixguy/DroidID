@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context="com.ssrij.fingerprintunlockmac.MainFragment"
+    android:background="#232937">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="All set!"
+        android:id="@+id/textViewVersionNum"
+        android:layout_marginTop="30dp"
+        android:textColor="#fff"
+        android:fontFamily="sans-serif-light"
+        android:textSize="70sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Your Mac is set up to use DroidID. To access the Mac app settings, click on the fingerprint icon on your Mac's status bar"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/textViewVersionNum"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:textColor="#656973"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unlink"
+        android:id="@+id/button"
+        android:layout_marginBottom="105dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="unlinkDevice" />
+</RelativeLayout>

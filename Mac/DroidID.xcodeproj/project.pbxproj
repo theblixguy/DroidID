@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C703AAA1C9DBE9E007E5E77 /* UnlockMac.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 7C703AA91C9DBE9E007E5E77 /* UnlockMac.scpt */; };
+		7C7C21F61C9E6E57000A7B51 /* 16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C7C21F51C9E6E57000A7B51 /* 16x16.png */; };
+		7C7C21F81C9E73DA000A7B51 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7C21F71C9E73DA000A7B51 /* ChangePasswordViewController.swift */; };
+		7C83070B1C9E884500AF0726 /* RestartApp.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 7C83070A1C9E884500AF0726 /* RestartApp.scpt */; };
+		7CF54EAB1C9D9E7A00260D41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF54EAA1C9D9E7A00260D41 /* AppDelegate.swift */; };
+		7CF54EAD1C9D9E7A00260D41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF54EAC1C9D9E7A00260D41 /* ViewController.swift */; };
+		7CF54EAF1C9D9E7A00260D41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CF54EAE1C9D9E7A00260D41 /* Assets.xcassets */; };
+		7CF54EBB1C9DA45600260D41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CF54EB91C9DA45600260D41 /* Main.storyboard */; };
+		7CF54EBD1C9DA8AC00260D41 /* ReadyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF54EBC1C9DA8AC00260D41 /* ReadyViewController.swift */; };
+		B213CC8CCF112020585B99F7 /* Pods_DroidID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C340B3A4A16140A9E97F6FF5 /* Pods_DroidID.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7C703AA91C9DBE9E007E5E77 /* UnlockMac.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UnlockMac.scpt; sourceTree = "<group>"; };
+		7C7C21F51C9E6E57000A7B51 /* 16x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 16x16.png; path = DroidIDBeta/Assets.xcassets/AppIcon.appiconset/16x16.png; sourceTree = "<group>"; };
+		7C7C21F71C9E73DA000A7B51 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		7C83070A1C9E884500AF0726 /* RestartApp.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RestartApp.scpt; sourceTree = "<group>"; };
+		7C8307201C9E936300AF0726 /* DroidID.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DroidID.entitlements; sourceTree = "<group>"; };
+		7C8307231C9E954300AF0726 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		7CF54EA71C9D9E7A00260D41 /* DroidID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DroidID.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CF54EAA1C9D9E7A00260D41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7CF54EAC1C9D9E7A00260D41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7CF54EAE1C9D9E7A00260D41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7CF54EB31C9D9E7A00260D41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CF54EBA1C9DA45600260D41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7CF54EBC1C9DA8AC00260D41 /* ReadyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadyViewController.swift; sourceTree = "<group>"; };
+		C340B3A4A16140A9E97F6FF5 /* Pods_DroidID.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DroidID.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB0B4AD2C3518450163F3A6C /* Pods-DroidID.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DroidID.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DroidID/Pods-DroidID.debug.xcconfig"; sourceTree = "<group>"; };
+		F5D5265458911A5688EC0125 /* Pods-DroidID.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DroidID.release.xcconfig"; path = "Pods/Target Support Files/Pods-DroidID/Pods-DroidID.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CF54EA41C9D9E7A00260D41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B213CC8CCF112020585B99F7 /* Pods_DroidID.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39F61562B514192D1BF752C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C8307231C9E954300AF0726 /* ServiceManagement.framework */,
+				C340B3A4A16140A9E97F6FF5 /* Pods_DroidID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5636ECC05ADCEB5E56427099 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB0B4AD2C3518450163F3A6C /* Pods-DroidID.debug.xcconfig */,
+				F5D5265458911A5688EC0125 /* Pods-DroidID.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7CF54E9E1C9D9E7A00260D41 = {
+			isa = PBXGroup;
+			children = (
+				7C83070A1C9E884500AF0726 /* RestartApp.scpt */,
+				7C703AA91C9DBE9E007E5E77 /* UnlockMac.scpt */,
+				7C7C21F51C9E6E57000A7B51 /* 16x16.png */,
+				7CF54EA91C9D9E7A00260D41 /* DroidID */,
+				7CF54EA81C9D9E7A00260D41 /* Products */,
+				39F61562B514192D1BF752C4 /* Frameworks */,
+				5636ECC05ADCEB5E56427099 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		7CF54EA81C9D9E7A00260D41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CF54EA71C9D9E7A00260D41 /* DroidID.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CF54EA91C9D9E7A00260D41 /* DroidID */ = {
+			isa = PBXGroup;
+			children = (
+				7C8307201C9E936300AF0726 /* DroidID.entitlements */,
+				7CF54EB91C9DA45600260D41 /* Main.storyboard */,
+				7CF54EAA1C9D9E7A00260D41 /* AppDelegate.swift */,
+				7CF54EAC1C9D9E7A00260D41 /* ViewController.swift */,
+				7CF54EBC1C9DA8AC00260D41 /* ReadyViewController.swift */,
+				7CF54EAE1C9D9E7A00260D41 /* Assets.xcassets */,
+				7CF54EB31C9D9E7A00260D41 /* Info.plist */,
+				7C7C21F71C9E73DA000A7B51 /* ChangePasswordViewController.swift */,
+			);
+			name = DroidID;
+			path = DroidIDBeta;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7CF54EA61C9D9E7A00260D41 /* DroidID */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CF54EB61C9D9E7A00260D41 /* Build configuration list for PBXNativeTarget "DroidID" */;
+			buildPhases = (
+				038CC2F8BC0F3608A6184A34 /* [CP] Check Pods Manifest.lock */,
+				7CF54EA31C9D9E7A00260D41 /* Sources */,
+				7CF54EA41C9D9E7A00260D41 /* Frameworks */,
+				7CF54EA51C9D9E7A00260D41 /* Resources */,
+				26299A98705447E4C40A0135 /* [CP] Embed Pods Frameworks */,
+				96B6DFA46E99C03253415800 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DroidID;
+			productName = DroidIDBeta;
+			productReference = 7CF54EA71C9D9E7A00260D41 /* DroidID.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7CF54E9F1C9D9E7A00260D41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Suyash Srijan";
+				TargetAttributes = {
+					7CF54EA61C9D9E7A00260D41 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 97346KBR2S;
+						LastSwiftMigration = 0810;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 7CF54EA21C9D9E7A00260D41 /* Build configuration list for PBXProject "DroidID" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7CF54E9E1C9D9E7A00260D41;
+			productRefGroup = 7CF54EA81C9D9E7A00260D41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7CF54EA61C9D9E7A00260D41 /* DroidID */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7CF54EA51C9D9E7A00260D41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C703AAA1C9DBE9E007E5E77 /* UnlockMac.scpt in Resources */,
+				7CF54EAF1C9D9E7A00260D41 /* Assets.xcassets in Resources */,
+				7C7C21F61C9E6E57000A7B51 /* 16x16.png in Resources */,
+				7C83070B1C9E884500AF0726 /* RestartApp.scpt in Resources */,
+				7CF54EBB1C9DA45600260D41 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		038CC2F8BC0F3608A6184A34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		26299A98705447E4C40A0135 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DroidID/Pods-DroidID-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96B6DFA46E99C03253415800 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DroidID/Pods-DroidID-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7CF54EA31C9D9E7A00260D41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CF54EAD1C9D9E7A00260D41 /* ViewController.swift in Sources */,
+				7C7C21F81C9E73DA000A7B51 /* ChangePasswordViewController.swift in Sources */,
+				7CF54EBD1C9DA8AC00260D41 /* ReadyViewController.swift in Sources */,
+				7CF54EAB1C9D9E7A00260D41 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7CF54EB91C9DA45600260D41 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CF54EBA1C9DA45600260D41 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7CF54EB41C9D9E7A00260D41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7CF54EB51C9D9E7A00260D41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		7CF54EB71C9D9E7A00260D41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB0B4AD2C3518450163F3A6C /* Pods-DroidID.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DroidIDBeta/DroidID.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 97346KBR2S;
+				INFOPLIST_FILE = DroidIDBeta/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suyashsrijan.DroidID;
+				PRODUCT_NAME = DroidID;
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7CF54EB81C9D9E7A00260D41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5D5265458911A5688EC0125 /* Pods-DroidID.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DroidIDBeta/DroidID.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 97346KBR2S;
+				INFOPLIST_FILE = DroidIDBeta/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suyashsrijan.DroidID;
+				PRODUCT_NAME = DroidID;
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7CF54EA21C9D9E7A00260D41 /* Build configuration list for PBXProject "DroidID" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CF54EB41C9D9E7A00260D41 /* Debug */,
+				7CF54EB51C9D9E7A00260D41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CF54EB61C9D9E7A00260D41 /* Build configuration list for PBXNativeTarget "DroidID" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CF54EB71C9D9E7A00260D41 /* Debug */,
+				7CF54EB81C9D9E7A00260D41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7CF54E9F1C9D9E7A00260D41 /* Project object */;
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ssrij.fingerprintunlockmac.ScanActivity"
+    android:background="#232937">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Scan"
+        android:id="@+id/textViewResult"
+        android:layout_marginTop="30dp"
+        android:textColor="#fff"
+        android:fontFamily="sans-serif-light"
+        android:textSize="70sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Please put your finger on the fingerprint sensor to authenticate"
+        android:id="@+id/textViewResultText"
+        android:layout_below="@+id/textViewResult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:textColor="#656973"
+        android:gravity="center_horizontal" />
+
+    <com.mattprecious.swirl.SwirlView
+        android:id="@+id/sw"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/textViewStatus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="47dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Waiting..."
+        android:id="@+id/textViewStatus"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="110dp"
+        android:textColor="#fff"
+        android:gravity="center_horizontal" />
+
+</RelativeLayout>

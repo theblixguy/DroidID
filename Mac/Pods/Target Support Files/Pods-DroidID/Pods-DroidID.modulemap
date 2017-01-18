@@ -1,0 +1,6 @@
+framework module Pods_DroidID {
+  umbrella header "Pods-DroidID-umbrella.h"
+
+  export *
+  module * { export * }
+}

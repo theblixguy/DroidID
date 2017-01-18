@@ -1,0 +1,120 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frame_layout__about"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:fitsSystemWindows="true">
+
+    <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_cal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".HomeActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="DroidID app for Android"
+                android:id="@+id/textView_Title"
+                android:layout_marginTop="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:textColor="#656973"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Version"
+                android:id="@+id/textView3_Version"
+                android:layout_below="@+id/textView_Title"
+                android:layout_alignLeft="@+id/textView_Title"
+                android:layout_alignStart="@+id/textView_Title"
+                android:layout_marginTop="38dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="1.0.000.b"
+                android:id="@+id/textViewVersionNum"
+                android:layout_below="@+id/textView3_Version"
+                android:layout_alignLeft="@+id/textView3_Version"
+                android:layout_alignStart="@+id/textView3_Version"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginTop="2dp"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="DroidID allows you to use your Android device's fingerprint sensor to conviniently unlock your Mac"
+                android:id="@+id/textView_info_about"
+                android:layout_centerVertical="true"
+                android:layout_alignLeft="@+id/textViewVersionNum"
+                android:layout_alignStart="@+id/textViewVersionNum"
+                android:textColor="#656973"
+                android:layout_alignRight="@+id/textViewBetaTag"
+                android:layout_alignEnd="@+id/textViewBetaTag" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="DroidID for Android is made using great open source software:"
+                android:id="@+id/textViewOpenSource"
+                android:layout_below="@+id/textView_info_about"
+                android:layout_alignLeft="@+id/textView_info_about"
+                android:layout_alignStart="@+id/textView_info_about"
+                android:layout_marginTop="35dp"
+                android:layout_alignRight="@+id/textView_info_about"
+                android:layout_alignEnd="@+id/textView_info_about"
+                android:singleLine="false"
+                android:longClickable="false"
+                android:elegantTextHeight="false"
+                android:fontFamily="sans-seif-thin"
+                android:textColor="#656973" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="beta"
+                android:id="@+id/textViewBetaTag"
+                android:textStyle="italic"
+                android:layout_below="@+id/textView_Title"
+                android:layout_alignRight="@+id/textView_Title"
+                android:layout_alignEnd="@+id/textView_Title"
+                android:layout_marginTop="-4dp"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="licenses"
+                android:id="@+id/textViewLicenses"
+                android:layout_marginTop="15dp"
+                android:textColor="#fff"
+                android:fontFamily="sans-serif-bold"
+                android:layout_below="@+id/textViewOpenSource"
+                android:layout_alignStart="@+id/textViewOpenSource" />
+
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</FrameLayout>

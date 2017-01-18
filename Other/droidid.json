@@ -1,0 +1,19 @@
+{
+  "users" : {
+    "ABCDEF" : {
+      "signedUp" : true,
+      "unlockMac" : false
+    },
+    "GHIJKL" : {
+      "signedUp" : true,
+      "unlockMac" : false
+    },
+    "MNOPQR" : {
+      "signedUp" : true,
+      "unlockMac" : false
+    },
+    "STUVWX" : {
+      "signedUp" : false
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="Persistent notification"
+        android:defaultValue="false"
+        android:summary="Show persistent notification to launch the unlock UI."
+        android:key="persistentNotif" />
+    <Preference android:title="Unlink"
+        android:key="unlinkDevice"
+        android:summary="Unlink this phone from DroidID"/>
+</PreferenceScreen>

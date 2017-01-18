@@ -1,0 +1,6 @@
+framework module Firebase {
+  umbrella header "FirebaseOSX-umbrella.h"
+
+  export *
+  module * { export * }
+}
