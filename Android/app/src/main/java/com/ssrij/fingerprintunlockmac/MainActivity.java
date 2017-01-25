@@ -46,13 +46,13 @@ public class MainActivity extends AppCompatActivity {
             authCode = generateUniqueCode();
             setFragment(new SetupFragment().newInstance(authCode));
 
-            Firebase myFirebaseRef = new Firebase("http://path_to_firebase_instance" + authCode + "/signedUp");
+            Firebase myFirebaseRef = new Firebase("https://path_to_firebase_instance" + authCode + "/signedUp");
             myFirebaseRef.setValue(false);
             myFirebaseRef.addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
                     Log.i("App", dataSnapshot.getValue().toString());
-                    if (dataSnapshot.getValue().equals("true")) {
+                    if (dataSnapshot.getValue().equals(true)) {
                         editor.putBoolean("isSignedUp", true);
                         editor.putString("authCode", authCode);
                         editor.apply();

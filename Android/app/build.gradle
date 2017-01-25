@@ -8,8 +8,8 @@ android {
         applicationId "com.ssrij.fingerprintunlockmac"
         minSdkVersion 21
         targetSdkVersion 25
-        versionCode 5
-        versionName "1.0"
+        versionCode 6
+        versionName "1.2"
     }
     buildTypes {
         release {
