@@ -34,13 +34,13 @@ class ViewController: NSViewController {
     }
     
     func changePassword(_ sender: AnyObject?) {
-        performSegue(withIdentifier: "changePassword", sender: self)
+    performSegue(withIdentifier: "changePassword", sender: self)
     }
     
     func unlinkMac(_ sender : AnyObject?) {
-        try! Locksmith.deleteDataForUserAccount(userAccount: "MacPwd")
-        UserDefaults.standard.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)
-        restartApp()
+    try! Locksmith.deleteDataForUserAccount(userAccount: "MacPwd")
+    UserDefaults.standard.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)
+    restartApp()
     }
     
     func restartApp() {
@@ -79,7 +79,7 @@ class ViewController: NSViewController {
         statusItem = statusBar.statusItem(withLength: CGFloat(NSVariableStatusItemLength))
         statusItem.image = menuIcon
         statusItem.menu = mainMenu
-        
+
     }
     
     @IBAction func connectApp(_ sender: AnyObject) {
@@ -99,9 +99,9 @@ class ViewController: NSViewController {
             alert.messageText = "Uh oh";
             alert.informativeText = "Authentication code has to be 6 characters long";
             alert.runModal();
-            
+
         } else if authCodeField.stringValue.characters.count == 6 {
-            authCodeEntered = true
+        authCodeEntered = true
         }
         
         if passwordField.stringValue.isEmpty {
@@ -109,20 +109,20 @@ class ViewController: NSViewController {
             alert.messageText = "Uh oh";
             alert.informativeText = "You did not enter your Mac's password";
             alert.runModal();
-            
+
         } else {
-            passwordEntered = true
+        passwordEntered = true
         }
         
         if authCodeEntered && passwordEntered {
-            let defaults = UserDefaults.standard
-            defaults.set(authCodeField.stringValue.uppercased(), forKey: "AuthCode")
-            defaults.synchronize()
-            try! Locksmith.updateData(data: ["MacPwd": passwordField.stringValue], forUserAccount: "MacPwd")
-            let signupRef = Firebase(url:"https://droidid.firebaseio.com/users/" + authCodeField.stringValue.uppercased() + "/signedUp")
-            signupRef?.setValue("true")
-            performSegue(withIdentifier: "ready", sender: self)
-            self.view.window?.orderOut(self)
+        let defaults = UserDefaults.standard
+        defaults.set(authCodeField.stringValue.uppercased(), forKey: "AuthCode")
+        defaults.synchronize()
+        try! Locksmith.updateData(data: ["MacPwd": passwordField.stringValue], forUserAccount: "MacPwd")
+        let signupRef = Firebase(url:"http://path_to_firebase_instance" + authCodeField.stringValue.uppercased() + "/signedUp")
+        signupRef?.setValue("true")
+        performSegue(withIdentifier: "ready", sender: self)
+        self.view.window?.orderOut(self)
         }
     }
     
@@ -148,31 +148,32 @@ class ViewController: NSViewController {
                 let dictionary = Locksmith.loadDataForUserAccount(userAccount: "MacPwd")
                 let pwd = dictionary!["MacPwd"]
                 self.view.window?.orderOut(self)
-                let myRootRef = Firebase(url:"https://droidid.firebaseio.com/users/" + token! + "/unlockMac")
+                let myRootRef = Firebase(url:"http://path_to_firebase_instance" + token! + "/unlockMac")
                 
                 let center: DistributedNotificationCenter = DistributedNotificationCenter.default()
                 center.addObserver(self, selector: #selector(ViewController.screenLocked), name: NSNotification.Name(rawValue: "com.apple.screenIsLocked"), object: nil)
                 center.addObserver(self, selector: #selector(ViewController.screenUnlocked), name: NSNotification.Name(rawValue: "com.apple.screenIsUnlocked"), object: nil)
-                
+
                 
                 myRootRef?.observe(.value, with: {
                     snapshot in
                     if (snapshot?.value! as! NSObject) as! Bool == true {
                         if self.isLocked == true {
-                            self.wakeDisplayFromSleep()
-                            let task = Process()
-                            //let pipe = NSPipe()
-                            let script = Bundle.main.path(forResource: "UnlockMac", ofType: "scpt")
-                            task.launchPath = "/usr/bin/osascript"
-                            task.arguments = [script!, pwd! as! String]
-                            //task.standardOutput = pipe
-                            task.launch()
-                            myRootRef?.setValue(false)
-                            //let data = pipe.fileHandleForReading.readDataToEndOfFile()
-                            //let output: String = String(data: data, encoding: NSUTF8StringEncoding)!
-                            //print(output)
+                        self.wakeDisplayFromSleep()
+                        print("Unlocking now...")
+                        let task = Process()
+                        //let pipe = NSPipe()
+                        let script = Bundle.main.path(forResource: "UnlockMac", ofType: "scpt")
+                        task.launchPath = "/usr/bin/osascript"
+                        task.arguments = [script!, pwd! as! String]
+                        //task.standardOutput = pipe
+                        task.launch()
+                        myRootRef?.setValue(false)
+                        //let data = pipe.fileHandleForReading.readDataToEndOfFile()
+                        //let output: String = String(data: data, encoding: NSUTF8StringEncoding)!
+                        //print(output)
                         } else {
-                            myRootRef?.setValue(false)
+                        myRootRef?.setValue(false)
                         }
                     }
                 })
@@ -183,21 +184,22 @@ class ViewController: NSViewController {
     }
     
     func screenLocked() {
-        isLocked = true
+    isLocked = true
     }
     
     func screenUnlocked() {
-        isLocked = false
+    isLocked = false
     }
     
     func wakeDisplayFromSleep() {
-        let entry = IORegistryEntryFromPath(kIOMasterPortDefault, "IOService:/IOResources/IODisplayWrangler");IORegistryEntrySetCFProperty(entry, "IORequestIdle" as CFString!, kCFBooleanFalse);
+    let entry = IORegistryEntryFromPath(kIOMasterPortDefault, "IOService:/IOResources/IODisplayWrangler");IORegistryEntrySetCFProperty(entry, "IORequestIdle" as CFString!, kCFBooleanFalse);
         IOObjectRelease(entry);
     }
     
     override func viewWillAppear() {
         super.viewWillAppear()
+        
     }
-    
+
 }
 

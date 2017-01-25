@@ -3,13 +3,13 @@ PODS:
   - Locksmith (3.0.0)
 
 DEPENDENCIES:
-  - FirebaseOSX (>= 2.5.1)
-  - Locksmith (>= 3.0.0)
+  - FirebaseOSX (>= 2.5.0)
+  - Locksmith (>= 2.0.8)
 
 SPEC CHECKSUMS:
   FirebaseOSX: 16300443a18fce7875be772e7f0f259726065258
   Locksmith: 310b4cc5031af5728bf4db5d4de547a5100c6a3b
 
-PODFILE CHECKSUM: 37500fc6d47ecec437dcd90d54fdca60d909d83e
+PODFILE CHECKSUM: eb0eae56fa00bf52e4349d8170fe11d31ef7a475
 
 COCOAPODS: 1.1.1

@@ -18,12 +18,13 @@ class ReadyViewController: NSViewController {
         self.view.window?.title = ""
     }
     
-    @IBAction func closeReadyWindow(_ sender: Any) {
-        let task = Process()
-        let script = Bundle.main.path(forResource: "RestartApp", ofType: "scpt")
-        task.launchPath = "/usr/bin/osascript"
-        task.arguments = [script!]
-        task.launch()
+    
+    @IBAction func closeWindow(_ sender: AnyObject) {
+            let task = Process()
+            let script = Bundle.main.path(forResource: "RestartApp", ofType: "scpt")
+            task.launchPath = "/usr/bin/osascript"
+            task.arguments = [script!]
+            task.launch()
     }
 }
 

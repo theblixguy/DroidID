@@ -4,7 +4,7 @@ platform :osx, '10.12'
 use_frameworks!
 
 target 'DroidID' do
-pod 'FirebaseOSX', '>= 2.5.1'
-pod 'Locksmith’, ‘>= 3.0.0’
+pod 'FirebaseOSX', '>= 2.5.0'
+pod 'Locksmith’, ‘>= 2.0.8’
 end
 
