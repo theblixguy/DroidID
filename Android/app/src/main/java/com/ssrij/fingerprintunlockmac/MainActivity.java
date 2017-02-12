@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             authCode = generateUniqueCode();
             setFragment(new SetupFragment().newInstance(authCode));
 
-            Firebase myFirebaseRef = new Firebase("https://path_to_firebase_instance" + authCode + "/signedUp");
+            Firebase myFirebaseRef = new Firebase("https://appname.firebaseio.com/somepath/" + authCode + "/signedUp");
             myFirebaseRef.setValue(false);
             myFirebaseRef.addValueEventListener(new ValueEventListener() {
                 @Override

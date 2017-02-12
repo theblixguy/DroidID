@@ -14,7 +14,7 @@ public class DroidIDApplication extends Application {
             super.onCreate();
             Firebase.setAndroidContext(this);
             Reprint.initialize(this);
-            Parse.initialize(this, "CODE_HERE", "CODE_HERE");
+            Parse.initialize(this, "APP_KEY", "APP_SECRET");
             ParseInstallation.getCurrentInstallation().saveInBackground();
         }
 }

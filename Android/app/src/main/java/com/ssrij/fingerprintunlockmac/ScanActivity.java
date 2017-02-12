@@ -48,7 +48,7 @@ public class ScanActivity extends AppCompatActivity {
                     sw.setState(SwirlView.State.OFF, true);
                 }
                 result.setText("Authenticated successfully!");
-                Firebase myFirebaseRef = new Firebase("https://path_to_firebase_instance" + authCode + "/unlockMac");
+                Firebase myFirebaseRef = new Firebase("https://appname.firebaseio.com/somepath/" + authCode + "/unlockMac");
                 myFirebaseRef.setValue(true);
                 Reprint.cancelAuthentication();
             }

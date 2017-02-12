@@ -119,8 +119,10 @@ class ViewController: NSViewController {
             defaults.set(authCodeField.stringValue.uppercased(), forKey: "AuthCode")
             defaults.synchronize()
             try! Locksmith.updateData(data: ["MacPwd": passwordField.stringValue], forUserAccount: "MacPwd")
-            let signupRef = Firebase(url:"https://path_to_firebase_instance" + authCodeField.stringValue.uppercased() + "/signedUp")
-            signupRef?.setValue("true")
+            let signupRef = Firebase(url:"https://appname.firebaseio.com/somepath/" + authCodeField.stringValue.uppercased() + "/signedUp")
+            let unlockMacRef = Firebase(url:"https://appname.firebaseio.com/somepath/" + authCodeField.stringValue.uppercased() + "/unlockMac")
+            signupRef?.setValue(true)
+            unlockMacRef?.setValue(false)
             performSegue(withIdentifier: "ready", sender: self)
             self.view.window?.orderOut(self)
         }
@@ -148,7 +150,7 @@ class ViewController: NSViewController {
                 let dictionary = Locksmith.loadDataForUserAccount(userAccount: "MacPwd")
                 let pwd = dictionary!["MacPwd"]
                 self.view.window?.orderOut(self)
-                let myRootRef = Firebase(url:"https://path_to_firebase_instance" + token! + "/unlockMac")
+                let myRootRef = Firebase(url:"https://appname.firebaseio.com/somepath/" + token! + "/unlockMac")
                 
                 let center: DistributedNotificationCenter = DistributedNotificationCenter.default()
                 center.addObserver(self, selector: #selector(ViewController.screenLocked), name: NSNotification.Name(rawValue: "com.apple.screenIsLocked"), object: nil)
